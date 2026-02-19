@@ -81,6 +81,12 @@
       .play-btn:hover {
         background-color: #008f5b;
       }
+      .download-btn.secondary-btn {
+        background-color: #0077be;
+      }
+      .download-btn.secondary-btn:hover {
+        background-color: #005fa3;
+      }
       footer {
         text-align: center;
         margin-top: 50px;
@@ -110,52 +116,15 @@
         font-size: 2em;
         margin-bottom: 20px;
       }
-      .ball-animation {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: inline-block;
-        animation: bounce 1s infinite alternate, colorChange 5s infinite linear;
-        box-shadow: 0 0 0 2px black;
-      }
-      @keyframes bounce {
-        from {
-          transform: translateY(0);
-        }
-        to {
-          transform: translateY(-20px);
-        }
-      }
-      @keyframes colorChange {
-        0% {
-          background-color: red;
-        }
-        16.66% {
-          background-color: orange;
-        }
-        33.33% {
-          background-color: yellow;
-        }
-        50% {
-          background-color: green;
-        }
-        66.66% {
-          background-color: blue;
-        }
-        83.33% {
-          background-color: indigo;
-        }
-        100% {
-          background-color: violet;
-        }
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>BookwormKevin's Games</h1>
-        <p>Welcome to the vibrant world of BookwormKevin's games!</p>
+        <a href="https://discord.gg/tRea9ew86J" class="download-btn secondary-btn"
+          >Join my Discord Server</a
+        >
       </header>
 
       <main>
@@ -182,13 +151,23 @@
             >
             <a
               href="https://github.com/kkuhn317/Hamster-Ballance-Blast"
-              class="download-btn"
+              class="download-btn secondary-btn"
               >Source Code</a
             >
             <a
               href="https://drive.google.com/file/d/1t6RVv1g--fcv8z1vy4u0rmvYpBIG4ZhU/view?usp=sharing"
-              class="download-btn"
+              class="download-btn secondary-btn"
               >April Fools Version</a
+            >
+            <a
+              href="hbb level archive.zip"
+              class="download-btn secondary-btn"
+              >Download Level Archive</a
+            >
+            <a
+              href="hbb zuma channel levels.zip"
+              class="download-btn secondary-btn"
+              >Download Zuma Channel Level Archive</a
             >
           </div>
 
@@ -243,18 +222,11 @@
             >
           </div>
         </div>
-
-        <div class="play-section">
-          <h2>Play a ball game made by AI!</h2>
-          <div class="ball-animation"></div>
-          <p>See how fast you can beat all 5 levels!</p>
-          <a href="ballgame.html" class="play-btn">Play Now!</a>
-        </div>
       </main>
 
       <footer>
-        <p>© 2024 BookwormKevin</p>
-        <p>Website made by BookwormKevin and WebSim.ai</p>
+        <p>© 2026 BookwormKevin</p>
+        <p>Website made by BookwormKevin and websim.com</p>
       </footer>
     </div>
   </body>
