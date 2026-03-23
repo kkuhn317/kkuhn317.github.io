@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - BookwormKevin's Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .game-card.featured {
+            grid-column: span 2;
+        }
+        .game-card.featured h3 {
+            font-size: 1.5em;
+        }
+        .game-card.featured .game-image {
+            height: 300px;
+        }
+        @media (max-width: 800px) {
+            .game-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+            .game-card.featured {
+                grid-column: span 1;
+            }
+            .game-card.featured .game-image {
+                height: 200px;
+            }
+        }
+    </style>
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+    <site-header></site-header>
+    <h2>Games</h2>
+    <div class="game-grid">
+        <a href="https://bookwormkevin.itch.io/lummm" class="game-card featured">
+            <div class="game-image">
+                <img src="images/games/lummm.png" alt="Level UP - Mario's Minigames Mayhem">
+            </div>
+            <h3>Level UP - Mario's Minigames Mayhem</h3>
+        </a>
+        <a href="https://bookwormkevin.itch.io/hamsterballance-blast" class="game-card featured">
+            <div class="game-image">
+                <img src="images/games/hbb.png" alt="Hamster Ballance Blast">
+            </div>
+            <h3>Hamster Ballance Blast</h3>
+        </a>
+        <a href="https://mega.nz/file/Ff9l1Y4Y#8Lvn8tdXDLx8e-T0wHGR2U5KP2jzemlmTdYzaIztdTE" class="game-card">
+            <div class="game-image">
+                <img src="images/games/hb2.png" alt="Hamster Ballance Blast">
+            </div>
+            <h3>Fake Hamsterball 2</h3>
+        </a>
+        <a href="https://drive.google.com/file/d/189ZjV2fKjsz3NUUZgBgZPoV4rimPzQUq/view?usp=sharing" class="game-card">
+            <div class="game-image">
+                <img src="images/games/driving.png" alt="Hamster Ballance Blast">
+            </div>
+            <h3>Driving Madness</h3>
+        </a>
+        <a href="https://drive.google.com/file/d/1rJLVEoH4uD0VEsSk3qCPBAcVkjOz-B0N/view?usp=sharing" class="game-card">
+            <div class="game-image">
+                <img src="images/games/driving-remix.png" alt="Hamster Ballance Blast">
+            </div>
+            <h3>Driving Madness Remix</h3>
+        </a>
+        <a href="https://drive.google.com/file/d/1M1744jZ7IgVwTX-lPtgCZGYTpjzv1K1C/view?usp=drivesdk" class="game-card">
+            <div class="game-image">
+                <img src="images/games/krs-rpg.png" alt="Hamster Ballance Blast">
+            </div>
+            <h3>KRS RPG</h3>
+        </a>
+    </div>
+
+    <div class="more-games-container">
+        <a href="https://websim.com/@BookwormKevin" class="big-btn">More games on my Websim profile</a>
+    </div>
+
+</body>
+</html>

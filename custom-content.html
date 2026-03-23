@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Content - BookwormKevin's Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content-list > h2 {
+            grid-column: span 2;
+            margin: 10px 0 -10px 0;
+        }
+        .content-item {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .content-item h3 {
+            margin: 0;
+            font-size: 2em;
+            color: #0077be;
+            border-bottom: 2px solid #0077be;
+            padding-bottom: 10px;
+        }
+        .content-body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .content-image {
+            width: 100%;
+            background-color: #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content-image img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .content-image iframe {
+            width: 100%;
+            display: block;
+            border: none;
+            aspect-ratio: 16 / 9;
+        }
+        .content-text {
+            font-size: 1.15em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .content-text p {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 900px) {
+            .content-list {
+                grid-template-columns: 1fr;
+            }
+            .content-list > h2 {
+                grid-column: span 1;
+            }
+        }
+    </style>
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+    <site-header></site-header>
+    <h2>Baba is You</h2>
+    
+    <div class="content-list">
+
+        <div class="content-item">
+            <h3>Kevin Props</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <img src="images/custom-content/kevin-props.png" alt="Kevin Props">
+                </div>
+                <div class="content-text">
+                    <p>A mod for Baba is You which adds several new properties!</p>
+                    <!-- Optional download/link button using your existing nav-btn style -->
+                    <a href="https://github.com/kkuhn317/Baba-Kevin-Props" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <h3>Baba is You - Noob Mode</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://youtube.com/embed/L8D5gTNrKJk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>In this levelpack, some original levels in the game have been slightly changed, and the only way you can beat them is by following what a random viewer's comment said, even though it shouldn't work.</p>
+                    <!-- Optional download/link button using your existing nav-btn style -->
+                    <a href="./downloads/baba noob mode v1.3.zip" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-item">
+            <h3>Baba is You but Bad</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://youtube.com/embed/YmgT3WedUSc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>My first levelpack, it takes the original levels in the game and messes them up a bunch. It's not that good, so I'm planning on improving this somewhat in the future.</p>
+                    <a href="./downloads/baba_is_you_but_bad.zip" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Heaven Studio Levels</h2>
+
+        <div class="content-item">
+            <h3>Rhythm Remix</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://www.youtube.com/embed/yJJM7YfLGY0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>Remakes GENERIC's Rhythm Remix video in Heaven Studio! I add new games to it as they are added.</p>
+                    <a href="https://mega.nz/file/QT8WiJxa#656sFOttDnxA7Z3LxVrMYFDYfNnZ8IanhjkpVyzp9Oc" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <h3>Sky Race - Hamsterball</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://www.youtube.com/embed/ES1ENUfIiLI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>Remix that uses the song Sky Race from Hamsterball. I only used games from the original Rhythm Tengoku game in this one.</p>
+                    <a href="https://mega.nz/file/4KdWGTZZ#wslatkegbbduPWNmIgPE1Bcch5Kwxh1Q0zCuQ13OOpM" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <h3>Remix 8 Remix Remix</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://www.youtube.com/embed/vuSjJD6S3uA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>This is a remix level that uses a remix of the Remix 8 song in Rhythm Heaven. Did you understand that? Probably not.</p>
+                    <a href="https://mega.nz/file/dSMzgAII#7y0r0-D6UtkrQpyr_OwuklxVMIjY_sacH0oszwLDFKA" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <h3>My other old bad levels</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://www.youtube.com/embed/eFlZisJ5bno" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>Here is all the earlier levels I made. Be warned, they are not that good.</p>
+                    <a href="https://mega.nz/file/gOUQVBTC#HtjHFTAgTj3SQYEvWGrbww5ynidDzum1x8dC4nmDyxM" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">The Lick but it gets more swung</a>
+                    <a href="https://mega.nz/file/4aV0wIgK#BBu1lUdGMheD8W1AT4JINo0krlpmmSwehFJUKvHa5Eg" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">RH but CURSED</a>
+                    <a href="https://mega.nz/file/4PEXDTbB#-LU7PzOL7RE3BkOZth1Er_0MO8nZuiaqHli0PQ_dYPU" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">RH but LIGHTSPEED</a>
+                    <a href="https://mega.nz/file/1bkCDCYL#i17dvPAPxUnzQS1-3Mocqe2opAhkiNrbPUqd2mjgcOg" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">RH but IMPOSSIBLE</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Other</h2>
+
+        <div class="content-item">
+            <h3>Level UP Resource Pack (SMB1 Remastered)</h3>
+            <div class="content-body">
+                <div class="content-image">
+                    <iframe src="https://www.youtube.com/embed/JbV0gtyKRXU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="content-text">
+                    <p>A resource pack that recreates the look of Level UP's animations!</p>
+                    <a href="https://gamebanana.com/mods/639315" class="nav-btn" style="font-size: 1em; padding: 10px 20px; margin: 10px 0 0 0;">More Info</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
